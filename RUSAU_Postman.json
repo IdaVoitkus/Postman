@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "b4fdf803-4cc6-42b8-a8b4-94cbfc2aac10",
+		"name": "RUSAU_Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20720567"
+	},
+	"item": [
+		{
+			"name": "Create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Ida\",\r\n  \"firstName\": \"Ida\",\r\n  \"lastName\": \"Voitkus\",\r\n  \"email\": \"sokol\",\r\n  \"password\": \"sokol123\",\r\n  \"phone\": \"sokol12345\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Ida\",\r\n  \"firstName\": \"Ida\",\r\n  \"lastName\": \"Voitkus\",\r\n  \"email\": \"sokol\",\r\n  \"password\": \"sokol123\",\r\n  \"phone\": \"sokol12345\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Ida",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Ida"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
